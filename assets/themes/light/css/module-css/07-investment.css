@@ -1,0 +1,467 @@
+.investment{
+    padding: 140px 0 110px;
+}
+.ellips-left{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.common-title-description{
+    max-width: 537px;
+    width: 100%;
+}
+.investment-single{
+    border-radius: 0 24px 0 24px;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-bottom: 30px;
+}
+.investment-single-image{
+    width: 100%;
+    height: 246px;
+    border-radius: 0 24px 0 0;
+}
+.investment-single-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0 24px 0 0;
+}
+.investment-single-content{
+    padding: 16px 16px;
+    background-color: var(--bg-2);
+}
+.investment-single-content a{
+    color: var(--black-color);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+}
+.investment-single-content h6{
+    font-size: 16px;
+}
+.investment-single-content h5{
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 1px;
+    margin-bottom: 14px;
+}
+.investment-single-footer{
+    padding-top: 16px;
+    border-top: 1px solid var(--border-1);
+}
+.investment-single-footer ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.investment-single-footer ul li{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.investment-single-footer ul li h6{
+    margin-bottom: 0;
+    font-size: 20px;
+}
+.investment-single-footer ul li sub{
+    bottom: 0;
+}
+
+.investment-container  ul#pills-tab {
+    margin-bottom: 40px;
+    display: inline-flex !important;
+    padding: 9px 14px;
+    border-radius: 50px;
+    border: 1px solid var(--border-1);
+}
+.investment-container .nav-pills {
+    --bs-nav-pills-border-radius: 16px !important;
+    --bs-nav-pills-link-active-color: var(--white-color) !important;
+    --bs-nav-pills-link-active-bg: var(--primary-color) !important;
+}
+.investment-container .nav-pills .nav-link.active{
+    color: var(--white-color) !important;
+    background: var(--primary-color) !important;
+}
+.investment-container .nav-pills .nav-link{
+    padding: 5px 14px;
+    color: var(--black-color);
+}
+
+.investment-container .owl-nav {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    display: flex;
+    gap: 10px;
+}
+.investment-container .owl-nav button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    background-color: #E4DEC9;
+    color: #444444;
+    font-size: 24px;
+    line-height: 32px;
+    transition: 0.5s;
+}
+.investment-container .owl-nav button:hover{
+    background: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+/* ---------------------------------
+investment 2
+---------------------------------- */
+.investment-two{
+    padding: 140px 0 110px;
+}
+.investment-two .common-title-container{
+    align-items: flex-start;
+}
+.investment-two .common-title{
+    max-width: 578px;
+    width: 100%;
+}
+.investment-two .investment-single-content a {
+    color: var(--black-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.invest-two-rate{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.investment-two-btn .btn-1{
+    background: transparent;
+    border: 1px solid var(--secondary-color);
+    font-size: 14px !important;
+    line-height: 20px !important;
+    padding: 9px 15px;
+}
+.investment-two .investment-single-footer ul li {
+    display: block;
+}
+.investment-two .investment-single-footer ul li span{
+    display: flex;
+    align-items: center;
+}
+/* ---------------------------------
+investment 2
+---------------------------------- */
+
+/* ---------------------------------
+investment Page
+---------------------------------- */
+.investment-page{
+    padding: 140px 0 110px;
+}
+
+.invest-details{
+    padding: 140px 0 140px;
+}
+.invest-details-image{
+    width: 100%;
+    height: 599px;
+    margin-bottom: 27px;
+}
+.invest-details-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 24px;
+}
+.thumnile-title{
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 56px;
+    margin-bottom: 12px;
+}
+.invest-details-content h4, .invest-details-list h4{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+    margin-bottom: 17px;
+}
+.invest-details-list ul li {
+    color: var(--black-color);
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.invest-details-list ul li i{
+    color: var(--secondary-color);
+}
+.invest-details-content, .invest-details-list{
+    margin-top: 42px;
+}
+.meta-tag {
+    display: flex;
+    align-items: center;
+    gap: 62px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--border-1);
+    margin-right: 30px;
+}
+.meta-single p{
+    margin-bottom: 8px;
+}
+.meta-single h5{
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+.meta-single h5 span{
+    color: var(--secondary-color);
+    font-size: 24px;
+}
+.meta-border{
+    width: 1px;
+    height: 24px;
+    background-color: #E9E8E5;
+}
+.invest-sidebar-image{
+    width: 100%;
+    height: 285px;
+    margin-bottom: 30px;
+}
+.invest-sidebar-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 0px 24px;
+}
+.invest-info{
+    border-radius: 0px 32px;
+    border: 1px solid rgba(165, 153, 119, 0.15);
+    background: var(--white-color);
+    box-shadow: 0px 4px 20.7px 2px rgba(243, 243, 243, 0.30);
+    overflow: hidden;
+}
+.invest-info-header{
+    padding: 17px 30px;
+    background-color: #F9F9F9;
+}
+.invest-info-body{
+    padding: 24px 30px;
+    border-top: 1px solid #E9E8E5;
+}
+.invest-count-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.quantity p{
+    margin-bottom: 8px;
+}
+
+/* count */
+.count-single{
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px;
+}
+.count-single button, .count-single span{
+    width: 46px;
+    height: 32px;
+    background: var(--white-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.count-single span{
+    border-left: 1px solid #D9D9D9;
+    border-right: 1px solid #D9D9D9;
+}
+/* count */
+
+.invest-summary{
+    border-radius: 16px;
+    background: #F9F9F9;
+    padding: 24px 24px;
+}
+.invest-summary h6{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0;
+}
+.invest-summary-list ul li{
+    padding: 24px 0 10px;
+    border-bottom: 1px solid var(--border-1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.invest-summary-list ul li p{
+    margin-bottom: 0;
+}
+.invest-summary-list ul li p i{
+    font-size: 14px;
+}
+.invest-summary-list ul li span{
+    font-size: 16px;
+    font-weight: 500;
+}
+/* ---------------------------------
+investment Page
+---------------------------------- */
+
+
+/* ---------------------------------
+responsive
+---------------------------------- */
+/* MackBook */
+@media only screen and (max-width: 1440px){
+
+}
+
+/* Large screen  */
+@media only screen and (min-width: 1200px) and (max-width: 1319px){
+    .investment-single-content a {
+        font-size: 22px;
+    }
+
+    .investment-two-btn .btn-1 {
+        font-size: 11px !important;
+        line-height: 16px !important;
+        padding: 9px 15px;
+    }
+    .investment-two .investment-single-content a {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.5px;
+    }
+    .investment-single-image {
+        height: 200px;
+    }
+}
+
+/* Medium screen  */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .investment-two .common-title {
+        max-width: 447px;
+        width: 100%;
+    }
+    .investment-two .investment-single-content a {
+        font-size: 18px;
+    }
+    
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .investment {
+        padding: 100px 0 100px;
+    }
+    .common-title-container {
+        margin-bottom: 10px !important;
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .investment-single-content a {
+        font-size: 20px;
+    }
+
+    .investment-page {
+        padding: 100px 0 70px;
+    }
+
+    .invest-details {
+        padding: 100px 0 100px;
+    }
+    .invest-details-image {
+        height: 435px;
+    }
+
+    .investment-two {
+        padding: 100px 0 80px;
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px){
+    .investment {
+        padding: 80px 0 80px;
+    }
+    .common-title-container {
+        margin-bottom: 10px !important;
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .investment-single-content a {
+        font-size: 18px;
+    }
+    .investment .owl-nav {
+        top: 11px;
+        right: 11px;
+    }
+
+    .investment-page {
+        padding: 80px 0 50px;
+    }
+
+    .invest-details {
+        padding: 80px 0 80px;
+    }
+    .invest-details-image {
+        height: 280px;
+    }
+    .thumnile-title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .meta-tag {
+        align-items: flex-start;
+        gap: 15px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-bottom: 1px solid var(--border-1);
+        margin-right: 0;
+    }
+    .meta-border {
+        display: none;
+    }
+    .invest-details-content h4, .invest-details-list h4 {
+        font-size: 22px;
+        line-height: 27px;
+        margin-bottom: 10px;
+    }
+    .invest-details-list ul li {
+        align-items: flex-start;
+        gap: 7px;
+    }
+    .invest-info-body {
+        padding: 20px 10px;
+    }
+    .invest-summary {
+        padding: 24px 10px;
+    }
+
+    .investment-two {
+        padding: 80px 0 50px;
+    }
+}
+/* ---------------------------------
+responsive
+---------------------------------- */

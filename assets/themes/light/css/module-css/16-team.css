@@ -1,0 +1,90 @@
+.team{
+    padding: 140px 0 110px;
+    background-color: #FBFBFB;
+}
+.team .common-title-container {
+    align-items: flex-start;
+}
+.team .common-title {
+    max-width: 578px;
+    width: 100%;
+}
+.team-single{
+    position: relative;
+    border-radius: 0 16px 0 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: var(--bg-12);
+}
+.team-single-image img{
+    max-width: 294px;
+    width: 100%;
+    height: 353px;
+    margin: 0 auto;
+}
+.team-single-content{
+    width: 93%;
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    background-color: var(--white-color);
+    border-radius: 0px 16px;
+    padding: 16px 16px;
+}
+.team-single-content h5{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+}
+.team-single-content p{
+    margin-bottom: 0;
+}
+
+/* ---------------------------------
+responsive
+---------------------------------- */
+/* MackBook */
+@media only screen and (max-width: 1440px){
+
+}
+
+/* Large screen  */
+@media only screen and (min-width: 1200px) and (max-width: 1319px){
+    .team-single-content h5 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+/* Medium screen  */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .team {
+        padding: 100px 0 70px;
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px){
+    .team {
+        padding: 80px 0 50px;
+    }
+    .team-single-content h5 {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 5px;
+    }
+    .investment-container .owl-nav {
+        top: 8px;
+        right: 6px;
+    }
+}
+/* ---------------------------------
+responsive
+---------------------------------- */

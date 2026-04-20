@@ -1,0 +1,244 @@
+.calculation{
+    padding: 100px 0;
+}
+.calculation .flower{
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+.calculation .abs{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.calculation .common-title{
+    max-width: 482px;
+    width: 100%;
+}
+.calculation .common-title h3 .star-shape img {
+    right: -30px;
+    top: -6px;
+}
+.calculation-left-container{
+    position: relative;
+    border-radius: 50px 0px;
+    width: 100%;
+    height: 496px;
+    overflow: hidden;
+    padding: 50px 50px;
+}
+.calcilation-table-left table {
+    width: 100%;
+}
+.calculation-left-content h4{
+    color: var(--white-color) !important;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+}
+.calculation-left-content p{
+    color: var(--white-color) !important;
+    margin: 16px 0 40px;
+}
+
+.calculation-right-container{
+    width: 100%;
+    height: 100%;
+    padding: 50px 50px;
+    border-radius: 0px 50px;
+    border: 1px solid var(--secondary-color);
+    background: #FFFEFC;
+}
+.calculation-right-container h5{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.calcilation-table {
+    border-radius: 20px;
+    border: 1px solid #E7E7E7;
+    background: #FFFCF4;
+    display: flex;
+    height: 310px;
+}
+.calcilation-table-header ul, .calcilation-table-body ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+.calcilation-table table tr th, .calcilation-table table tr td,  .calcilation-table-body ul li{
+    padding: 10px 24px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.calcilation-table table tr th, .total-payment-header{
+    border-bottom: 1px solid #E7E7E7;
+}
+.calcilation-table .calcilation-table-left {
+    width: 70%;
+    height: 310px;
+    overflow-y: auto;
+}
+.calcilation-table .total-payment {
+    height: 100%;
+    width: 30%;
+    border-left: 1px solid #E7E7E7;
+    text-align: center;
+}
+.table-input{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.table-input input{
+    width: 68px;
+    border-radius: 4px;
+    border: 1px solid #E7E7E7;
+    background: transparent;
+    padding: 3px 5px;
+}
+.table-input span{
+    margin-top: -9px;
+}
+
+.total-payment-header{
+    padding: 10px 25px;
+    
+}
+.total-payment-body{
+    padding: 30px 10px;
+}
+.total-payment-body h3{
+    background: var(--Button-color-01, linear-gradient(354deg, #CE9C00 42.23%, #F3CB4D 155.47%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 42px;
+    padding: 20px 0 40px;
+}
+.total-payment-body h3 span{
+    font-size: 20px;
+}
+.total-payment-header h6{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+.total-payment-list ul li{
+    display: flex;
+    text-align: start;
+    margin-bottom: 5px;
+    gap: 5px;
+}
+
+
+/* ---------------------------------
+responsive
+---------------------------------- */
+/* MackBook */
+@media only screen and (max-width: 1440px){
+    .calculation-right-container {
+        padding: 30px 30px;
+    }
+    .calcilation-table {
+        height: 354px;
+    }
+    .calcilation-table .calcilation-table-left {
+        height: 354px;
+    }
+}
+
+/* Large screen  */
+@media only screen and (min-width: 1200px) and (max-width: 1319px){
+    table tr th, table tr td, .calcilation-table-body ul li {
+        padding: 10px 11px;
+    }
+}
+
+/* Medium screen  */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+    .calculation-left-container {
+        height: 368px;
+        margin-bottom: 30px;
+    }
+    .calcilation-table .calcilation-table-left {
+        height: 312px;
+    }
+    .calcilation-table {
+        height: 312px;
+    }
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .calculation {
+        padding: 80px 0;
+    }
+    .calculation-left-container {
+        height: 320px;
+        margin-bottom: 30px;
+    }
+
+    .calcilation-table {
+        height: 320px;
+    }
+    .calcilation-table .calcilation-table-left {
+        height: 320px;
+    }
+    .calcilation-table-left table {
+        width: 507px;
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px){
+    .calculation {
+        padding: 50px 0;
+    }
+    .calculation-left-container {
+        padding: 50px 15px;
+        height: 365px;
+        margin-bottom: 30px;
+    }
+    .calculation-left-content h4 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .calculation .common-title h3 .star-shape img {
+        right: -8px;
+        top: -42px;
+    }
+
+    .calculation-right-container {
+        padding: 30px 15px;
+    }
+    .calcilation-table {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .calcilation-table-left table {
+        width: 507px;
+    }
+    .calcilation-table .calcilation-table-left {
+        width: 100%;
+        height: 320px;
+        overflow-y: auto;
+    }
+    .calcilation-table .total-payment {
+        width: 100%;
+        border-left: none;
+    }
+}
+/* ---------------------------------
+responsive
+---------------------------------- */

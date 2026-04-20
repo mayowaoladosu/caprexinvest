@@ -1,0 +1,70 @@
+/* Default Color File  */
+
+:root {
+    /*  primary color */
+    --primary: #ce9c00;
+    --secondary: #f3cb4d;
+    --primary-color: linear-gradient(
+        354deg,
+        var(--primary) 42.23%,
+        var(--secondary) 155.47%
+    );
+    --primary-reverse: linear-gradient(
+        354deg,
+        var(--secondary) 42.23%,
+        var(--primary) 155.47%
+    );
+
+    /*  secondary color */
+    --secondary-color: var(--primary);
+    --secondary-color-rgb: 243, 203, 77;
+
+    /* text-color 1 */
+    --text-color-1: #29294a;
+    --text-color-2: #FDFBF5;
+    --text-color-3: #f3f3f3;
+
+    /* black color */
+    --black-color: #0A0A0A;
+    --black-color-rgb: 10, 10, 10;
+
+    /* white color */
+    --white-color: #ffffff;
+    --white-color-rgb: 255, 255, 255;
+
+    /* border color */
+    --border-1: #5c5336;
+    --border-2: #686868;
+    --border-3: #383735;
+    --border-4: #e8ebee;
+    --border-5: #fff3cc;
+    --border-6: #e9d491;
+
+    /* Bg color */
+    --bg-1: #262626;
+    --bg-2: #f4f4f4;
+    --bg-3: #f2f6f5;
+    --bg-4: #fffbec;
+    --bg-5: #f6f5ff;
+    --bg-6: #fbf3ee;
+    --bg-7: #fcfcfc;
+    --bg-8: #fafafa;
+    --bg-9: #2e2e2e;
+    --bg-10: #fbf6e8;
+    --bg-11: #f7f7f7;
+    --bg-12: #ebebeb;
+    --bg-15: #FDFBF5;
+    --bg-16: #F4F1E9;
+    --bg-gradiant: linear-gradient(to bottom, rgba(201, 162, 59, 0.32), rgba(224, 222, 215, 0.32));
+
+    /* Shadow */
+    --shadow-1: 1px 4px 19.9px 0px linear-gradient(
+        354deg,
+        var(--primary) 42.23%,
+        var(--secondary) 155.47%
+    );
+    --shadow-2: 1px 2px 4px 1px rgba(232, 229, 222, 0.4);
+    --shadow-3: 10px 7px 10px 0px rgba(236, 236, 236, 0.25);
+    --shadow-5: 1px 4px 20px 0px rgba(206, 156, 0, 0.25);
+    --shadow-4: 7px 8px 34px 0px #f4f4f4;
+}

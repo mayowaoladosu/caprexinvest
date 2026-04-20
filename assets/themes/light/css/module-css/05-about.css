@@ -1,0 +1,229 @@
+.about {
+    padding: 100px 0;
+}
+.about-left-container {
+    position: relative;
+}
+
+.about .bg-layer {
+    background-position: center !important;
+}
+
+.about .about-left-card img{
+    width: 366px;
+    height: 168px;
+    border-radius: 10px;
+}
+.about-left-btn a {
+    position: absolute;
+    left: 0;
+    top: 44px;
+    border-radius: 0px 8px;
+    background: #d9d9d9;
+    background: url("../../images/background/about-add-bg.png");
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    max-width: 307px;
+    width: 100%;
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+.about-left-btn a i {
+    transition: 0.5s;
+}
+.about-left-btn a:hover i {
+    transform: rotate(45deg);
+}
+.about-left-image {
+    max-width: 635px;
+    width: 100%;
+    height: 655px;
+    margin-left: auto;
+    margin-right: 20px;
+}
+.about-left-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+}
+.about-left-card {
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    animation: jump 10s infinite linear;
+}
+.about-right-container {
+    position: relative;
+    padding: 0 60px;
+}
+
+/* more text */
+.more-text {
+    display: none;
+}
+#read-more-checkbox:checked ~ .more-text {
+    display: inline;
+}
+#read-more-checkbox:checked ~ .read-more-label::after {
+    content: "Less";
+}
+.read-more-label::after {
+    content: "More";
+    color: var(--black-color);
+    cursor: pointer;
+}
+/* more text */
+
+.about-right-icon {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: var(--shadow-2);
+    color: var(--secondary-color);
+    font-size: 26px;
+}
+.about-right-single h5 {
+    margin: 18px 0 10px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+}
+.about-right-single p {
+    font-size: 16px;
+    line-height: 27px;
+}
+
+/* ---------------------------------
+about two
+---------------------------------- */
+.about-two {
+    padding: 100px 0;
+}
+.about-left-container {
+    position: relative;
+}
+.about-two-left-image {
+    max-width: 651px;
+    width: 100%;
+    height: 591px;
+    margin: 0 auto;
+    border-radius: 24px;
+}
+.about-two-left-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 24px;
+    object-fit: cover;
+}
+.about-left-top-conent {
+    background-color: var(--white-color);
+    padding: 15px 15px;
+    border-radius: 12px;
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    box-shadow: var(--shadow-2);
+}
+.about-left-top-conent h4 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 56px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.about-left-top-conent p {
+    margin-bottom: 0;
+}
+.about-left-bottom-content {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    max-width: 212px;
+    width: 100%;
+    height: 177px;
+    padding: 24px;
+    background: url("../../images/background/about-2-left-bg.png") no-repeat;
+}
+.about-left-bottom-content h4 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+}
+.about-two-description {
+    margin-bottom: 30px;
+}
+.about-2-btn {
+    margin-top: 20px;
+}
+/* ---------------------------------
+about two
+---------------------------------- */
+
+/* ---------------------------------
+responsive
+---------------------------------- */
+/* Large screen  */
+@media only screen and (min-width: 1200px) and (max-width: 1319px) {
+    .about-left-image {
+        height: 597px;
+    }
+    .about-right-single h5 {
+        font-size: 22px;
+    }
+}
+
+/* Medium screen  */
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .about {
+        padding: 80px 0;
+    }
+    .about-left-image {
+        max-width: 100%;
+    }
+    .about-two {
+        padding: 80px 0 ;
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) {
+    .about {
+        padding: 50px 0;
+    }
+    .about-right-container {
+        padding: 0 20px;
+    }
+
+    .about-two {
+        padding: 50px 0;
+    }
+    .about-two-left-image {
+        height: 391px;
+    }
+    .about-left-bottom-content {
+        padding: 20px;
+        height: 130px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    .about-left-bottom-content h4 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+}
+/* ---------------------------------
+responsive
+---------------------------------- */

@@ -1,0 +1,66 @@
+<!-- TradingView Ticker Tape Widget -->
+<div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+            "symbols": [
+            { "proName": "OANDA:XAUUSD", "title": "Gold / USD" },
+            { "proName": "OANDA:XAUEUR", "title": "Gold / EUR" },
+            { "proName": "OANDA:XAUJPY", "title": "Gold / JPY" },
+            { "proName": "OANDA:XAUGBP", "title": "Gold / GBP" },
+            { "proName": "OANDA:XAUAUD", "title": "Gold / AUD" },
+            { "proName": "OANDA:XAUCAD", "title": "Gold / CAD" },
+            { "proName": "OANDA:XAUCHF", "title": "Gold / CHF" },
+            { "proName": "OANDA:XAUCNY", "title": "Gold / CNY" },
+            { "proName": "OANDA:XAUNZD", "title": "Gold / NZD" },
+            { "proName": "OANDA:XAUINR", "title": "Gold / INR" },
+            { "proName": "OANDA:XAUBDT", "title": "Gold / BDT" },
+            { "proName": "OANDA:XAUPKR", "title": "Gold / PKR" },
+            { "proName": "OANDA:XAULKR", "title": "Gold / LKR" },
+            { "proName": "OANDA:XAUMYR", "title": "Gold / MYR" },
+            { "proName": "OANDA:XAUBRL", "title": "Gold / BRL" },
+            { "proName": "OANDA:XAUMXN", "title": "Gold / MXN" },
+            { "proName": "OANDA:XAURUB", "title": "Gold / RUB" },
+            { "proName": "OANDA:XAUTRY", "title": "Gold / TRY" },
+            { "proName": "OANDA:XAUAED", "title": "Gold / AED" },
+            { "proName": "OANDA:XAUSAR", "title": "Gold / SAR" },
+            { "proName": "OANDA:XAUQAR", "title": "Gold / QAR" },
+            { "proName": "OANDA:XAUEGP", "title": "Gold / EGP" },
+            { "proName": "OANDA:XAUKWD", "title": "Gold / KWD" },
+            { "proName": "OANDA:XAUBHD", "title": "Gold / BHD" },
+            { "proName": "OANDA:XAUOMR", "title": "Gold / OMR" },
+            { "proName": "OANDA:XAUAOA", "title": "Gold / AOA" },
+            { "proName": "OANDA:XAUARS", "title": "Gold / ARS" },
+            { "proName": "OANDA:XAUCLP", "title": "Gold / CLP" },
+            { "proName": "OANDA:XAUZAR", "title": "Gold / ZAR" },
+            { "proName": "OANDA:XAUHKD", "title": "Gold / HKD" },
+            { "proName": "OANDA:XAUSGD", "title": "Gold / SGD" },
+            { "proName": "OANDA:XAUTWD", "title": "Gold / TWD" },
+            { "proName": "OANDA:XAUPHP", "title": "Gold / PHP" },
+            { "proName": "OANDA:XAUIDR", "title": "Gold / IDR" },
+            { "proName": "OANDA:XAUISK", "title": "Gold / ISK" },
+            { "proName": "OANDA:XAUNOK", "title": "Gold / NOK" },
+            { "proName": "OANDA:XAUSEK", "title": "Gold / SEK" },
+            { "proName": "OANDA:XAUDKK", "title": "Gold / DKK" },
+            { "proName": "OANDA:XAUPLN", "title": "Gold / PLN" },
+            { "proName": "OANDA:XAUHUF", "title": "Gold / HUF" },
+            { "proName": "OANDA:XAUCZK", "title": "Gold / CZK" },
+            { "proName": "OANDA:XAURON", "title": "Gold / RON" },
+            { "proName": "OANDA:XAUUAH", "title": "Gold / UAH" },
+            { "proName": "OANDA:XAUILS", "title": "Gold / ILS" },
+            { "proName": "OANDA:XAUNGN", "title": "Gold / NGN" },
+            { "proName": "OANDA:XAUTZS", "title": "Gold / TZS" },
+            { "proName": "OANDA:XAUKES", "title": "Gold / KES" },
+            { "proName": "OANDA:XAUETB", "title": "Gold / ETB" },
+            { "proName": "OANDA:XAUUGX", "title": "Gold / UGX" },
+            { "proName": "OANDA:XAUMAD", "title": "Gold / MAD" },
+            { "proName": "OANDA:XAUJOD", "title": "Gold / JOD" }
+        ]
+            ,
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "locale": "en"
+        }
+    </script>
+</div>

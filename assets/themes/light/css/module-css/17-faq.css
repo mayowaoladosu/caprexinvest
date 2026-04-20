@@ -1,0 +1,79 @@
+.faq{
+    padding: 140px 0 140px;
+}
+.faq .common-title{
+    max-width: 614px;
+    width: 100%;
+    margin:  0 auto 50px;
+}
+
+
+.accordion-item {
+    color: var(--bs-accordion-color);
+    background-color: #FAF8F5 !important;
+    border: none !important;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+.accordion-button {
+    padding: 22px 22px !important;
+    font-size: 20px !important;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--black-color) !important;
+    border-radius: 8px !important;
+    background-color: #FBFBFB !important;
+}
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: #FAF8F5 !important;
+    box-shadow: none !important;
+}
+.accordion-item:first-of-type .accordion-button {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
+}
+
+
+/* ---------------------------------
+responsive
+---------------------------------- */
+/* MackBook */
+@media only screen and (max-width: 1440px){
+
+}
+
+/* Large screen  */
+@media only screen and (min-width: 1200px) and (max-width: 1319px){
+
+}
+
+/* Medium screen  */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .faq {
+        padding: 100px 0 100px;
+    }
+}
+
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px){
+    .faq {
+        padding: 80px 0 80px;
+    }
+    .accordion-button {
+        padding: 15px 10px !important;
+        font-size: 16px !important;
+        line-height: 25px;
+    }
+}
+/* ---------------------------------
+responsive
+---------------------------------- */
