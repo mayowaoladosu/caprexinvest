@@ -1,5 +1,5 @@
 <?php return array (
-  'github_status' => '1',
-  'google_status' => '1',
-  'facebook_status' => '1',
+  'github_status' => '0',
+  'google_status' => '0',
+  'facebook_status' => '0',
 );

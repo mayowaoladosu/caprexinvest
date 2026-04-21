@@ -63,10 +63,4 @@
 
 @endsection
 
-@push('script')
-    <script>
-
-        preloaderFunction()
-    </script>
-@endpush
 

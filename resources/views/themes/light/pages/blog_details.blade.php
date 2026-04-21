@@ -12,7 +12,7 @@
                             </div>
                             <div class="blog-details-image-info">
                                 <ul>
-                                    <li><i class="fa-light fa-user"></i> @lang('By Admin')</li>
+                                    <li><i class="fa-light fa-user"></i> @lang('By CaprexInvest Desk')</li>
                                     <li><i class="fa-light fa-calendar-days"></i> {{dateTime($blog->created_at,'F j, Y')}}</li>
                                 </ul>
                             </div>

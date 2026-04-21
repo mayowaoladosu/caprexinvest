@@ -84,7 +84,7 @@ Route::get('password/reset/{token}', [ResetPasswordController::class, 'showReset
 Route::post('password/reset', [ResetPasswordController::class, 'reset'])->name('password.reset.update');
 
 Route::get('instruction/page', function () {
-    return view('instruction-page');
+    return redirect()->route('page', ['slug' => 'about']);
 })->name('instructionPage');
 
 Route::group(['middleware' => ['maintenanceMode']], function () use ($basicControl) {

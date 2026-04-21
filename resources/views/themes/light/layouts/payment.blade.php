@@ -27,17 +27,7 @@
     @stack('style')
     @laravelPWA
 </head>
-<body onload="preloaderFunction()" >
-
-
-<div id="preloader">
-    <div class="load">
-        <hr/>
-        <hr/>
-        <hr/>
-        <hr/>
-    </div>
-</div>
+<body>
 
 
 <main id="main" class="main">

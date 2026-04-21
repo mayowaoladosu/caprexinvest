@@ -1,59 +1,59 @@
 <?php return array (
   'name' => 'Bullion',
-  'manifest' =>
+  'manifest' => 
   array (
-    'name' => 'Bullion',
-    'short_name' => 'Bullion',
+    'name' => 'CaprexInvest',
+    'short_name' => 'CaprexInvest',
     'start_url' => '/',
     'background_color' => '#09071c',
     'theme_color' => '#10ce8c',
     'display' => 'standalone',
     'orientation' => 'any',
     'status_bar' => 'black',
-    'icons' =>
+    'icons' => 
     array (
-      '72x72' =>
+      '72x72' => 
       array (
         'path' => 'https://bullion.bugfinder.app/assets/upload/pwa/icon-72x72.png',
         'purpose' => 'any',
       ),
-      '96x96' =>
+      '96x96' => 
       array (
         'path' => 'https://bullion.bugfinder.app/assets/upload/pwa/icon-96x96.png',
         'purpose' => 'any',
       ),
-      '128x128' =>
+      '128x128' => 
       array (
         'path' => 'https://bullion.bugfinder.app/assets/upload/pwa/icon-128x128.png',
         'purpose' => 'any',
       ),
-      '144x144' =>
+      '144x144' => 
       array (
         'path' => 'https://bullion.bugfinder.app/assets/upload/pwa/icon-144x144.png',
         'purpose' => 'any',
       ),
-      '152x152' =>
+      '152x152' => 
       array (
         'path' => 'https://bullion.bugfinder.app/assets/upload/pwa/icon-152x152.png',
         'purpose' => 'any',
       ),
-      '192x192' =>
+      '192x192' => 
       array (
         'path' => 'https://bullion.bugfinder.app/assets/upload/pwa/icon-192x192.png',
         'purpose' => 'any',
       ),
-      '384x384' =>
+      '384x384' => 
       array (
         'path' => 'https://bullion.bugfinder.app/assets/upload/pwa/icon-384x384.png',
         'purpose' => 'any',
       ),
-      '512x512' =>
+      '512x512' => 
       array (
         'path' => 'https://bullion.bugfinder.app/assets/upload/pwa/icon-512x512.png',
         'purpose' => 'any',
       ),
     ),
-    'splash' =>
+    'splash' => 
     array (
       '640x1136' => 'https://bullion.bugfinder.app/assets/upload/pwa/splash-640x1136.png',
       '750x1334' => 'https://bullion.bugfinder.app/assets/upload/pwa/splash-750x1334.png',
@@ -66,27 +66,27 @@
       '1668x2388' => 'https://bullion.bugfinder.app/assets/upload/pwa/splash-1668x2388.png',
       '2048x2732' => 'https://bullion.bugfinder.app/assets/upload/pwa/splash-2048x2732.png',
     ),
-    'shortcuts' =>
+    'shortcuts' => 
     array (
-      0 =>
+      0 => 
       array (
         'name' => 'Shortcut Link 1',
         'description' => 'Shortcut Link 1 Description',
         'url' => '/',
-        'icons' =>
+        'icons' => 
         array (
           'src' => '/images/icons/icon-72x72.png',
           'purpose' => 'any',
         ),
       ),
-      1 =>
+      1 => 
       array (
         'name' => 'Shortcut Link 2',
         'description' => 'Shortcut Link 2 Description',
         'url' => '/',
       ),
     ),
-    'custom' =>
+    'custom' => 
     array (
     ),
   ),

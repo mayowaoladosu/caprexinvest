@@ -31,7 +31,7 @@ class ReworkCaprexPublicContent extends Command
     public function handle(): int
     {
         $supportEmail = 'support@caprexinvest.com';
-        $companyAddress = '100 Peachtree St NW, Suite 1450, Atlanta, GA 30303, United States';
+        $companyAddress = 'Menlo Park, California, United States';
         $languageId = (int) (Language::query()->value('id') ?? 1);
 
         DB::transaction(function () use ($supportEmail, $companyAddress, $languageId) {
@@ -102,7 +102,7 @@ class ReworkCaprexPublicContent extends Command
     {
         $this->updateSingleSection('footer_section', [
             'short_description' => 'CaprexInvest is a global digital investment platform focused on transparent access to gold and BTC opportunities.',
-            'phone' => '+1 (212) 970-3100',
+            'phone' => '+1 (310) 606-7409',
             'address' => $companyAddress,
             'email' => $supportEmail,
             'newsletter_title' => 'Get Market Updates',
@@ -113,16 +113,16 @@ class ReworkCaprexPublicContent extends Command
             'title' => 'Contact CaprexInvest',
             'sub_title' => 'Our support and operations teams are available to help with account, compliance, and platform questions.',
             'email' => $supportEmail,
-            'phone' => '+1 (212) 970-3100',
+            'phone' => '+1 (310) 606-7409',
             'location' => $companyAddress,
             'support' => 'Response time: typically within one business day',
-            'location_url' => 'https://maps.google.com/?q=100+Peachtree+St+NW+Atlanta+GA+30303',
+            'location_url' => 'https://maps.google.com/?q=Menlo+Park+California+United+States',
         ]);
 
         $this->updateSingleSection('about_section', [
             'title' => 'About CaprexInvest',
-            'sub_title' => 'A modern investment platform for disciplined exposure to gold and BTC.',
-            'description' => 'CaprexInvest combines transparent execution, clear reporting, and strong operational controls so investors can access high-conviction assets with confidence.',
+            'sub_title' => 'A practical wealth platform built for structured exposure to gold and Bitcoin.',
+            'description' => 'CaprexInvest brings together dependable execution, straightforward reporting, and robust safeguards so clients can invest in conviction assets with clarity.',
         ]);
 
         $this->replaceMultipleSection('about_section', [
@@ -143,6 +143,60 @@ class ReworkCaprexPublicContent extends Command
             'sub_title' => 'Practical education for serious investors.',
             'button_name' => 'View All Articles',
             'button_url' => '/blogs',
+        ]);
+
+        $this->updateSingleSection('banner_section', [
+            'title' => 'Build Long-Term Wealth with Gold and BTC',
+            'description' => 'Access disciplined investment plans backed by transparent reporting, operational controls, and secure account infrastructure.',
+            'button' => 'Create Account',
+            'heading' => 'Trusted Infrastructure',
+        ]);
+        $this->updateSectionMedia('banner_section', [
+            'button_url' => 'https://caprexinvest.com/register',
+            'image' => [
+                'path' => 'contents/caprex-hero-investor.jpg',
+                'driver' => 'local',
+            ],
+        ]);
+
+        $this->updateSingleSection('about_section_two', [
+            'title' => 'Who We Are',
+            'sub_title' => 'Commitment to Investor Confidence and Long-Term Value',
+            'description' => 'CaprexInvest helps clients access vetted gold and Bitcoin opportunities through a clean interface, practical controls, and reliable account oversight.',
+            'button' => 'Explore Platform',
+            'banner_title_1' => 'Trusted Since 2016',
+            'banner_sub_title_1' => 'A track record built on consistency and accountability',
+            'banner_title_2' => 'Client Satisfaction',
+            'banner_sub_title_2' => '95%',
+        ]);
+        $this->updateSectionMedia('about_section_two', [
+            'button_url' => 'https://caprexinvest.com/about',
+            'banner_image' => [
+                'path' => 'contents/caprex-support-agent.jpg',
+                'driver' => 'local',
+            ],
+        ]);
+        $this->replaceMultipleSection('about_section_two', [
+            [
+                'icon' => 'fa-light fa-diagram-project',
+                'title' => 'Clear Investment Flow',
+                'short_description' => 'Open, track, and review positions with straightforward workflows designed for everyday investors.',
+            ],
+            [
+                'icon' => 'fa-light fa-vault',
+                'title' => 'Asset-Backed Approach',
+                'short_description' => 'Gold-focused plans are structured around secure custody and transparent balance reporting.',
+            ],
+            [
+                'icon' => 'fa-light fa-shield-check',
+                'title' => 'Operational Controls',
+                'short_description' => 'Account checks, verification controls, and audit-friendly records support safer platform operations.',
+            ],
+            [
+                'icon' => 'fa-light fa-money-bill-transfer',
+                'title' => 'Efficient Settlements',
+                'short_description' => 'Funding and withdrawal workflows are designed to stay reliable, simple, and reviewable.',
+            ],
         ]);
 
         $this->updateSingleSection('faq_section', [
@@ -304,12 +358,16 @@ class ReworkCaprexPublicContent extends Command
         foreach ($blogs as $index => $blog) {
             $payload = $blogData[$index % count($blogData)];
             $slug = Str::slug($payload['title']);
+            $existingDate = $blog->created_at ?: now();
+            $normalizedDate = $existingDate->copy()->setYear((int) now()->year);
 
             $blog->slug = $slug;
             $blog->page_title = $payload['title'];
             $blog->meta_title = $payload['title'];
             $blog->meta_description = Str::limit(strip_tags($payload['description']), 155);
             $blog->status = 1;
+            $blog->created_at = $normalizedDate;
+            $blog->updated_at = now();
             $blog->save();
 
             BlogDetails::query()->updateOrCreate(
@@ -320,6 +378,22 @@ class ReworkCaprexPublicContent extends Command
                 ]
             );
         }
+    }
+
+    private function updateSectionMedia(string $name, array $media): void
+    {
+        $content = Content::query()->where('name', $name)->where('type', 'single')->first();
+        if (!$content) {
+            return;
+        }
+
+        $existing = json_decode(json_encode($content->media), true);
+        if (!is_array($existing)) {
+            $existing = [];
+        }
+
+        $content->media = array_merge($existing, $media);
+        $content->save();
     }
 
     private function updateSingleSection(string $name, array $data): void

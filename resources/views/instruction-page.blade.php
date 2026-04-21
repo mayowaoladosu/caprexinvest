@@ -14,15 +14,16 @@
                 @endif
                 <div class="col-sm-6">
                     <div class="error-content">
+                        @php
+                            $languageName = config('languages.langCode')[app()->currentLocale()] ?? 'your selected language';
+                        @endphp
 
                         <div class="error-info font-30">
-                            @lang('Coming Soon Content in') `{{isset(config('languages.langCode')[app()->currentLocale()])??'Unknown Language' }}`
+                            @lang('Coming Soon Content in') {{ $languageName }}
                         </div>
                         <p class="mt-3">
-
-                            @lang('If there is no content available in') <span class="text-gradient">`{{isset(config('languages.langCode')[app()->currentLocale()])??'Unknown Language' }}`</span>, @lang('our administrators are working diligently to set up relevant content for our')
-                            <span
-                                class="text-gradient">`{{isset(config('languages.langCode')[app()->currentLocale()])??'Unknown Language' }}`</span> @lang('audience. We appreciate your patience as we strive to provide valuable information in your preferred language.')
+                            @lang('If content is not yet available in') <span class="text-gradient">{{ $languageName }}</span>,
+                            @lang('our team is preparing localized pages for that audience. Thank you for your patience while we complete the update.')
                         </p>
 
                         @if(auth()->guard('admin')->check())

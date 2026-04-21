@@ -12,7 +12,7 @@
                             <a href="{{route('page')}}"><img src="{{logo(true)}}" alt="image"></a>
                         </div>
                         <div class="sign-in-left-btn">
-                            <a href="{{$register_section['single']['media']->button_url??''}}"
+                            <a href="https://caprexinvest.com"
                                class="btn-1">{{$register_section['single']['button_name']??''}} <i
                                     class="fa-regular fa-arrow-right"></i></a>
                         </div>
@@ -146,26 +146,28 @@
                                         <button type="submit" class="btn-1">@lang('Create Account') <span></span></button>
                                     </div>
                                 </form>
-                                <div class="media-login">
-                                    <div class="media-login-border"><h5>@lang('OR')</h5></div>
-                                    <ul>
-                                        @if(config('socialite.facebook_status'))
-                                            <li><a href="{{route('socialiteLogin','facebook')}}"><img
-                                                        src="{{asset('assets/admin/facebook.png')}}"
-                                                        alt="icon"> @lang('Facebook')</a></li>
-                                        @endif
-                                        @if(config('socialite.google_status'))
-                                            <li><a href="{{route('socialiteLogin','google')}}"><img
-                                                        src="{{asset('assets/admin/google.png')}}" alt="icon">  @lang('Google')</a>
-                                            </li>
-                                        @endif
-                                        @if(config('socialite.github_status'))
-                                            <li><a href="{{route('socialiteLogin','github')}}"><img
-                                                        src="{{asset('assets/admin/github.png')}}" alt="icon">  @lang('Github')</a>
-                                            </li>
-                                        @endif
-                                    </ul>
-                                </div>
+                                @if(config('socialite.facebook_status') || config('socialite.google_status') || config('socialite.github_status'))
+                                    <div class="media-login">
+                                        <div class="media-login-border"><h5>@lang('OR')</h5></div>
+                                        <ul>
+                                            @if(config('socialite.facebook_status'))
+                                                <li><a href="{{route('socialiteLogin','facebook')}}"><img
+                                                            src="{{asset('assets/admin/facebook.png')}}"
+                                                            alt="icon"> @lang('Facebook')</a></li>
+                                            @endif
+                                            @if(config('socialite.google_status'))
+                                                <li><a href="{{route('socialiteLogin','google')}}"><img
+                                                            src="{{asset('assets/admin/google.png')}}" alt="icon">  @lang('Google')</a>
+                                                </li>
+                                            @endif
+                                            @if(config('socialite.github_status'))
+                                                <li><a href="{{route('socialiteLogin','github')}}"><img
+                                                            src="{{asset('assets/admin/github.png')}}" alt="icon">  @lang('Github')</a>
+                                                </li>
+                                            @endif
+                                        </ul>
+                                    </div>
+                                @endif
                             </div>
                         </div>
                     </div>
@@ -201,7 +203,7 @@
             // International Telephone Input start
             const input = document.querySelector("#telephone");
             const iti = window.intlTelInput(input, {
-                initialCountry: "bd",
+                initialCountry: "us",
                 separateDialCode: true,
             });
             input.addEventListener("countrychange", updateCountryInfo);

@@ -45,6 +45,19 @@ class FrontendController extends Controller
                 })
                 ->first();
 
+            if (!$pageDetails) {
+                // Fallback for pages that exist but are missing the current theme mapping.
+                $pageDetails = PageDetail::with('page')
+                    ->whereHas('page', function ($query) use ($slug) {
+                        $query->where('slug', $slug);
+                    })
+                    ->first();
+            }
+
+            if (!$pageDetails) {
+                throw new \Exception('Not Found', 404);
+            }
+
 
             $pageSeo = [
                 'page_title' => optional(optional($pageDetails)->page)->page_title ?? '',

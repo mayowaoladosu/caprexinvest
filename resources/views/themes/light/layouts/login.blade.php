@@ -42,35 +42,6 @@
 <body>
 <div class="page-wrapper">
 
-    <!-- preloader start -->
-    <div class="loader-wrap">
-        <div class="preloader">
-            <div class="preloader-close">x</div>
-            <div id="handle-preloader" class="handle-preloader">
-                <div class="animation-preloader">
-                    <div class="loader-image">
-                        <img src="{{asset(template(true).'images/loader.gif')}}" alt="loader">
-                    </div>
-                    <div class="txt-loading">
-                        @foreach(loader() as $charecter)
-                            @if($charecter == " ")
-                                <span data-text-preloader="{{$charecter}}" class="letters-loading ml_15">
-                               {{$charecter}}
-                                </span>
-                            @else
-                                <span data-text-preloader="{{$charecter}}" class="letters-loading">
-                               {{$charecter}}
-                                </span>
-                            @endif
-
-                        @endforeach
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- preloader end -->
-
     @yield('content')
     @include(template().'partials.footer')
 </div>
